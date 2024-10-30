@@ -69,12 +69,12 @@ export const Home = () => {
         </div>
       </section>
       {/* Features Section */}
-      <div className="flex flex-row">
-        <section className="mt-16 w-[49vw] flex-grow">
+      <div className="flex flex-col items-center">
+        <section className="mt-16 w-[50vw] flex-grow">
           <h2 className="text-2xl font-semibold mb-4 text-gray-200">
             Features
           </h2>
-          <div className="space-y-4 px-4">
+          <div className="grid grid-rows-1 gap-6">
             {/* Feature Cards */}
             <div className="flex items-center transition-all ease-in-out duration-200 hover:scale-105 bg-gray-800 hover:bg-gray-700 p-4 rounded-lg shadow-sm">
               <div className="flex-shrink-0 w-12 h-12 text-blue-400 rounded-full flex items-center justify-center text-2xl">
@@ -123,7 +123,7 @@ export const Home = () => {
           <h2 className="text-2xl font-semibold mb-4 text-gray-200">
             Testimonials
           </h2>
-          <div className="w-[45.25vw] p-6">
+          <div className="w-[50vw]">
             <TestimonialSlider />
           </div>
         </section>
