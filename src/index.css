@@ -16,3 +16,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.slick-dots li button:before {
+  color: rgb(243, 244, 246);
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgb(243 244 246);
+}

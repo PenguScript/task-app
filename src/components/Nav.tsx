@@ -1,6 +1,7 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-export const Nav = () => {
+export const Nav = React.memo(() => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-gray-900 shadow-md shadow-gray-950/30 text-white p-4 z-20">
       <div className="container mx-auto flex justify-between items-center">
@@ -25,4 +26,4 @@ export const Nav = () => {
       </div>
     </nav>
   );
-};
+});

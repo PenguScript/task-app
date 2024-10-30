@@ -7,9 +7,10 @@ import {
   FiTrendingUp,
 } from "react-icons/fi";
 import TestimonialSlider from "./TestimonialSlider";
+import React from "react";
 
 
-export const Home = () => {
+export const Home = React.memo(() => {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
@@ -123,11 +124,11 @@ export const Home = () => {
           <h2 className="text-2xl font-semibold mb-4 text-gray-200">
             Testimonials
           </h2>
-          <div className="w-[50vw]">
+          <div className="w-[50vw] h-[15vh]">
             <TestimonialSlider />
           </div>
         </section>
       </div>
     </div>
   );
-};
+});

@@ -41,6 +41,9 @@ export default function TestimonialSlider() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
+    cssEase: "ease-in-out",
+    pauseOnHover: true,
+    fade: true,
   };
 
   return (
