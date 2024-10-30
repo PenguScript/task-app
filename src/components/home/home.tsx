@@ -124,7 +124,7 @@ export const Home = React.memo(() => {
           <h2 className="text-2xl font-semibold mb-4 text-gray-200">
             Testimonials
           </h2>
-          <div className="w-[50vw] h-[15vh]">
+          <div className="w-[50vw]">
             <TestimonialSlider />
           </div>
         </section>
