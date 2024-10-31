@@ -8,7 +8,7 @@ import {
 } from "react-icons/fi";
 import TestimonialSlider from "./TestimonialSlider";
 import React from "react";
-import Divider from "@mui/material/Divider"
+import Divider from "@mui/material"
 
 export const Home = React.memo(() => {
   return (
