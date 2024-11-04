@@ -5,22 +5,26 @@ import {
   FiEdit,
   FiCalendar,
   FiTrendingUp,
+  FiArrowDown,
 } from "react-icons/fi";
 import TestimonialSlider from "./TestimonialSlider";
 import React from "react";
-import { Divider } from '@mui/material';
+import { Card, Divider } from '@mui/material';
 
 export const Home = React.memo(() => {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
-      <section className="text-center lg:text-left mt-16 px-4">
+      <section className="text-center h-screen lg:text-left mt-16 px-4">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-100">
           Welcome to ZenFlow
         </h1>
         <p className="mt-4 text-base md:text-lg font-light text-gray-400">
           The most powerful tool for managing your projects and tasks.
         </p>
+        <div className="mt-20 outline outline-gray-100/20 outline-1 bg-gray-800 rounded-full h-12 w-12 animate-[bounce_2s_ease-in-out_infinite] mx-auto justify-center flex items-center">
+          <FiArrowDown fontSize={"25px"}/>
+        </div>
       </section>
 
       {/* Quick Links Section */}
@@ -29,6 +33,12 @@ export const Home = React.memo(() => {
           Quick Links
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <Card className="bg-gray-800 h-36 rounded-lg shadow-md text-gray-200 flex flex-row items-start md:flex-row md:items-center transition-colors duration-200">
+            <img src="https://picsum.photos/id/684/600/400" alt="Tasks" className="max-w-[40%] h-full object-cover" />
+            <p className="flex justify-center items-center h-full font-semibold pl-1 pr-4">
+              Manage your tasks efficiently, set deadlines, and track your progress with ease.
+            </p>
+          </Card>
           {/* Quick Links Cards */}
           <div className="bg-gray-800 hover:bg-gray-700 p-6 rounded-lg shadow-md text-gray-200 flex flex-col items-center md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4 transition-colors duration-200">
             <FiCheckSquare className="text-3xl text-blue-400" />
