@@ -17,10 +17,10 @@ export const Nav = React.memo(() => {
             Home
           </Link>
           <Link
-            to="/projects"
+            to="/dashboard"
             className="px-4 py-2 rounded-full bg-gray-800 hover:bg-gray-700 active:bg-gray-600 transition-colors"
           >
-            Projects
+            Dashboard
           </Link>
         </div>
       </div>
