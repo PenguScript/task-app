@@ -15,16 +15,18 @@ export const Home = React.memo(() => {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
-      <section className="text-center h-screen lg:text-left mt-16 px-4">
+      <section className="text-center flex items-center flex-col h-screen lg:text-left mt-16 px-4">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-100">
           Welcome to ZenFlow
         </h1>
         <p className="mt-4 text-base md:text-lg font-light text-gray-400">
           The most powerful tool for managing your projects and tasks.
         </p>
-        <div className="mt-20 outline outline-gray-100/20 outline-1 bg-gray-800 rounded-full h-12 w-12 animate-[bounce_2s_ease-in-out_infinite] mx-auto justify-center flex items-center">
-          <FiArrowDown fontSize={"25px"}/>
-        </div>
+        <a>
+          <div className="mt-20 outline outline-gray-100/20 outline-1 bg-gray-800 rounded-full h-12 w-12 animate-[bounce_2s_ease-in-out_infinite] justify-center flex items-center">
+            <FiArrowDown fontSize={"25px"}/>
+          </div>
+        </a>
       </section>
 
       {/* Quick Links Section */}
@@ -39,41 +41,6 @@ export const Home = React.memo(() => {
               Manage your tasks efficiently, set deadlines, and track your progress with ease.
             </p>
           </Card>
-          {/* Quick Links Cards */}
-          <div className="bg-gray-800 hover:bg-gray-700 p-6 rounded-lg shadow-md text-gray-200 flex flex-col items-center md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4 transition-colors duration-200">
-            <FiCheckSquare className="text-3xl text-blue-400" />
-            <div className="text-center md:text-left">
-              <h3 className="text-lg font-semibold">Tasks</h3>
-              <p className="text-sm text-gray-400">
-                Manage your tasks efficiently.
-              </p>
-            </div>
-          </div>
-          <div className="bg-gray-800 hover:bg-gray-700 p-6 rounded-lg shadow-md text-gray-200 flex flex-col items-center md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4 transition-colors duration-200">
-            <FiFolder className="text-3xl text-green-400" />
-            <div className="text-center md:text-left">
-              <h3 className="text-lg font-semibold">Projects</h3>
-              <p className="text-sm text-gray-400">
-                Oversee all your project details.
-              </p>
-            </div>
-          </div>
-          <div className="bg-gray-800 hover:bg-gray-700 p-6 rounded-lg shadow-md text-gray-200 flex flex-col items-center md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4 transition-colors duration-200">
-            <FiTarget className="text-3xl text-yellow-400" />
-            <div className="text-center md:text-left">
-              <h3 className="text-lg font-semibold">Goals</h3>
-              <p className="text-sm text-gray-400">Set and track your goals.</p>
-            </div>
-          </div>
-          <div className="bg-gray-800 hover:bg-gray-700 p-6 rounded-lg shadow-md text-gray-200 flex flex-col items-center md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4 transition-colors duration-200">
-            <FiEdit className="text-3xl text-red-400" />
-            <div className="text-center md:text-left">
-              <h3 className="text-lg font-semibold">Notes</h3>
-              <p className="text-sm text-gray-400">
-                Quickly jot down your ideas.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
